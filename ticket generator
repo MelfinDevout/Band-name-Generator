@@ -1,0 +1,22 @@
+print("Welcome to the seaworld")
+height=int(input("Enter your height:"))
+bill = 0
+if height>120:
+    age=int(input("Your age please:"))
+    if age<12:
+        bill = 5
+        print("Pay $5")
+    elif age<=18:
+        bill = 10
+        print("Pay $10")
+    else:
+        bill = 50
+        print("Pay $50")
+    photo = input("Do you need photo? Y or N")
+    if photo == "Y":
+        bill = bill + 50 
+        print(f"Your total bill is ${bill}")
+    else:
+        print(f"Your bill is {bill}")
+else:
+    print("Grow before you wish")
